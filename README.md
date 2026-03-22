@@ -4,7 +4,7 @@
 
 ## paleta de cores: #0F766E #FB7185 #F0FDFA #042F2E #2563EB
 
-### Logotipo: https://ui-avatars.com/api/?background0F766E=FB7185&name=Guilherme%20Novaes
+### Logotipo: (https://ui-avatars.com/api/?background0F766E=FB7185&name=Guilherme%20Novaes)
 
 #### Nome: Guilherme Novaes Rodrigues dos Santos
 # RM: 570444
