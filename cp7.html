@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Novaes</title>
+    <link rel="stylesheet" href="cp7.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="https://ui-avatars.com/api/?background=0F766E&color=FB7185&name=Guilherme%20Novaes" width="70">
+        <h1>Guilherme Novaes</h1>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="perfil-section">
+        <div class="texto">
+            <h2>Guilherme Novaes Rodrigues dos Santos</h2>
+            <p>Objetivo: Desenvolvedor de Sistemas (preferência home office)</p>
+            <p>Carapicuíba - São Paulo</p>
+        </div>
+        <img src="EU.png" class="foto-direita" alt="">
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Guilherme Novaes, estudante de ADS que está disposto a aprender e melhorar continuamente para se tornar um bom desenvolvedor na área.</p>
+    </section>
+
+    <section id="objetivo">
+        <h2>Objetivo Profissional</h2>
+        <p>Busco ter um salário estável e trabalhar em home office como desenvolvedor.</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="cards-container">
+
+            <div class="card accordion-card">
+                <button class="accordion-btn" aria-expanded="false">
+                    <h3>Hard Skills</h3>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Básico em Python</li>
+                        <li>Médio em Java</li>
+                        <li>Básico em Banco de Dados</li>
+                        <li>Iniciante em Git e GitHub</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card accordion-card">
+                <button class="accordion-btn" aria-expanded="false">
+                    <h3>Soft Skills</h3>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Trabalho em equipe</li>
+                        <li>Boa comunicação</li>
+                        <li>Facilidade em transmitir ideias</li>
+                        <li>Adaptabilidade</li>
+                        <li>Boa oratória</li>
+                        <li>Pessoa tranquila</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card accordion-card">
+                <button class="accordion-btn" aria-expanded="false">
+                    <h3>Tecnologias</h3>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>IntelliJ</li>
+                        <li>Windows</li>
+                        <li>Linux básico</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>FIEB - Análise e Desenvolvimento de Sistemas</p>
+        <p>FIAP - Análise e Desenvolvimento de Sistemas (em andamento)</p>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiência</h2>
+        <p>Ainda não possuo experiência profissional na área.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <div class="contato-info">
+            <p><strong>Telefone:</strong> +55 (11) 99413-9500</p>
+            <p><strong>Email:</strong> guilherme.novaes07@gmail.com</p>
+
+            <h3 style="margin-top:12px;">Redes Sociais</h3>
+            <ul>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <p style="margin-top:10px;"><em>Em breve projetos virão</em></p>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-wrapper">
+            <h3>Envie sua mensagem</h3>
+
+            <div id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome <span>*</span></label>
+                    <input type="text" id="nome" placeholder="Seu nome completo">
+                    <span class="msg-erro" id="erro-nome">⚠ Nome deve ter pelo menos 3 caracteres e conter apenas letras</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail <span>*</span></label>
+                    <input type="text" id="email" placeholder="seu@email.com">
+                    <span class="msg-erro" id="erro-email">⚠ Digite um e-mail válido (exemplo@dominio.com)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem <span>*</span></label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <span class="msg-erro" id="erro-mensagem">⚠ Mensagem deve ter pelo menos 10 caracteres</span>
+                </div>
+
+                <button class="btn-enviar" id="btnEnviar">Enviar Mensagem</button>
+            </div>
+
+           
+            <div id="mensagem-sucesso">
+                <div class="sucesso-icon">✓</div>
+                <h3>Mensagem enviada com sucesso!</h3>
+                <p id="sucesso-texto"></p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 - Guilherme Novaes</p>
+    </div>
+</footer>
+
+<button id="voltarTopo" aria-label="Voltar ao topo">↑</button>
+
+<script src="cp7.js"></script>
+</body>
+</html>
